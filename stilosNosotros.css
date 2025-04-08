@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  
+  header {
+    background-color: #e3f2fd;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+  
+  .nav-container h1 {
+    color: #1565c0;
+    font-size: 28px;
+  }
+  
+  .right-side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #1565c0;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #0d47a1;
+  }
+  
+  nav a.activo {
+    border-bottom: 2px solid #1565c0;
+  }
+  
+  .dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #1565c0;
+  }
+  
+ 
+  main.contenido {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 30px;
+  }
+  
+
+  .presentacion h2 {
+    font-size: 24px;
+    color: #0d47a1;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .presentacion p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card h3 {
+    color: #1565c0;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+  
+  
+  body.modo-oscuro {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  body.modo-oscuro header {
+    background-color: #1e1e1e;
+  }
+  
+  body.modo-oscuro nav a {
+    color: #90caf9;
+  }
+  
+  body.modo-oscuro nav a:hover {
+    color: #bbdefb;
+  }
+  
+  body.modo-oscuro .card {
+    background-color: #1f1f1f;
+    box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+  }
+  
+  body.modo-oscuro .card h3 {
+    color: #90caf9;
+  }
+  
+  body.modo-oscuro .dark-mode-toggle {
+    color: #90caf9;
+  }
+  

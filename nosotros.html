@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nosotros - SoftwareTech</title>
+  <link rel="stylesheet" href="stilosNosotros.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <h1>SoftwareTech</h1>
+      <div class="right-side">
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+          <a href="nosotros.html" class="activo">Nosotros</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="contenido">
+    <section class="presentacion">
+      <h2>¿Quienes somos?</h2>
+      <p>Somos un grupo de estudiantes dedicados al desarrollo de software con pasión por crear soluciones innovadoras y útiles.</p>
+    </section>
+
+    <section class="info">
+      <div class="card">
+        <h3>Misión</h3>
+        <p>Formar soluciones tecnológicas que impacten positivamente a la sociedad y prepararnos para un futuro profesional exitoso.</p>
+      </div>
+      <div class="card">
+        <h3>Visión</h3>
+        <p>Convertirnos en profesionales líderes en la industria tecnológica con un fuerte enfoque ético e innovador.</p>
+      </div>
+      <div class="card">
+        <h3>Valores</h3>
+        <p>Trabajo en equipo, responsabilidad, creatividad y compromiso con la calidad.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('modo-oscuro');
+    }
+  </script>
+</body>
+</html>
