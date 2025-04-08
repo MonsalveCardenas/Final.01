@@ -3,7 +3,7 @@ name: CI - Deploy & HTML Linter
 on:
   push:
     branches:
-      - master  # O usa "main" si tu rama principal se llama así
+      - master  
   pull_request:
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .  # Publica desde la raíz del proyecto
+          publish_dir: .  
 
   lint-html:
     runs-on: ubuntu-latest
