@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desarrollo Web | SoftwareTech</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+        
+    <label id="label_toggle" for="toggle">
+        <i class="fas fa-moon"></i>
+    </label>
+    <input type="checkbox" id="toggle">
+
+    <header>
+        <nav>
+        <a href="#index.html">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#Nos">Nosotros</a>
+        <a href="#">Contacto</a>
+        </nav>
+        <section class="typing-text">
+            <h1 class="typing">Software Tech</h1>
+            <h2>Soluciones de software a tu medida</h2>
+          </section>
+          
+        
+       
+    </header>
+
+    <main class="contenedor">
+        <section>
+        <h2 class="titulo"  id="Servicios">¿Qué hacemos?</h2>
+        <div class="cards">
+            <div class="card">
+            <h3>Desarrollo Web</h3>
+            <p>Aplicaciones web responsive con las tecnologías más actuales.</p>
+            </div>
+            <div class="card">
+            <h3>Apps Móviles</h3>
+            <p>Soluciones móviles para iOS y Android usando Flutter y React Native.</p>
+            </div>
+            <div class="card">
+            <h3>Consultoría</h3>
+            <p>Te ayudamos a definir, planificar y ejecutar tu transformación digital.</p>
+            </div>
+        </div>
+        </section>
+    </main>
+    <div>
+        <div class="background">
+            <div class="container">
+              <div class="screen">
+                <div class="screen-header">
+                  <div class="screen-header-left">
+                    <div class="screen-header-button close"></div>
+                    <div class="screen-header-button maximize"></div>
+                    <div class="screen-header-button minimize"></div>
+                  </div>
+                  <div class="screen-header-right">
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                  </div>
+                </div>
+                <div class="screen-body">
+                  <div class="screen-body-item left">
+                    <div class="app-title">
+                      <span>CONTACT</span>
+                      <span>NOS</span>
+                    </div>
+                    <div class="app-contact">NUMERO CONTACTO: +57 3140219212</div>
+                  </div>
+                  <div class="screen-body-item">
+                    <div class="app-form">
+                      <div class="app-form-group">
+                        <input class="app-form-control" placeholder="NOMBRE" >
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control" placeholder="CORREO">
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control" placeholder="TELEFONO">
+                      </div>
+                      <div class="app-form-group message">
+                        <input class="app-form-control" placeholder="MENSAGE">
+                      </div>
+                      <div class="app-form-group buttons">
+                        <button class="app-form-button">CANCELAR</button>
+                        <button class="app-form-button">ENVIAR</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="credits">
+                
+                <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+                  
+                </a>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+
+    <footer style="text-align:center; padding: 20px;">
+        <p>&copy; 2025 SoftwareTech. </p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        toggle.addEventListener('change', () => {
+        document.body.classList.toggle('dark');
+        });
+    </script>
+
+</body>
+</html>
